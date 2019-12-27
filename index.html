@@ -23,7 +23,23 @@
     <img src="https://source.unsplash.com/" alt="a random image from unspalsh.com, a free image resource, it changes frequently">
 
     <style>
-        
+        :root {
+            --base: #ffc600;
+            --spacing: 10px;
+            --blur: 10px;
+        }
+
+        img {
+            padding: var(--spacing);
+            background: var(--base);
+            filter: blur(var(--blur));
+        }
+
+        .h1 {
+            color: var(--base);
+        }
+
+        /* misc styles not related to CSS variables */
     </style>
 </body>
 </html>
